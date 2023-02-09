@@ -1,8 +1,8 @@
 
-abstract public class Shape2 {
+public interface Shape2 {
 
-	private String color = "blue";
+	String color = "blue";
 	
-	abstract public double getArea();
+	public abstract double getArea();
 
 }

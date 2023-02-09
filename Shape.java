@@ -1,22 +1,24 @@
-//import 
-abstract public class Shape {
+
+public abstract class Shape {
 
 	private String color;
 	
-	
-	public Shape (String color) {
+	public Shape(String color) {
 		this.color = color;
 	}
 	
 	public Shape() {
-		color = "";
+		this.color = null;
+		//this(null);
 	}
-
 	
-	abstract public double getArea();
+	//abstract method
+	public abstract double getArea();
 	
 	@Override
-	public  String toString() {
-		return "color="+color;
+	//method return string in form "color = [color]"
+	public String toString() {
+		return "color = "+ this.color;
 	}
+
 }

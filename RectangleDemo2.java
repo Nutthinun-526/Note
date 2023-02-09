@@ -1,10 +1,19 @@
+import java.util.*;
 
 public class RectangleDemo2 {
 
 	public static void main(String[] args) {
-		Rectangle r2 = new Rectangle(4.5, 15, "blue");
+		Scanner scan = new Scanner(System.in);
 		
-		System.out.print(r2.toString());
+		System.out.print("Input width : ");
+		double width = scan.nextDouble();
+		System.out.print("Input length : ");
+		double length = scan.nextDouble();
+		
+		Rectangle2 rec = new Rectangle2(width, length, null);
+		System.out.println(rec);
+		System.out.println("Area of Rectangle is "+rec.getArea());
+		
 
 	}
 

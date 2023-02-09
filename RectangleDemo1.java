@@ -1,14 +1,20 @@
 import javax.swing.JOptionPane;
-
 public class RectangleDemo1 {
-
 
 	public static void main(String[] args) {
 		
-		Rectangle r1 = new Rectangle(4.5, 15, "red");
+		double width = Double.parseDouble(
+	        	JOptionPane.showInputDialog("Input width:"));
+		double length = Double.parseDouble(
+	        	JOptionPane.showInputDialog("Input length:"));
+		String color = JOptionPane.showInputDialog("Input color");
 		
-		JOptionPane.showMessageDialog(null, r1.toString(),"Rectangle",1, null);
-
+		Rectangle rec = new Rectangle(width, length, color);
+		
+		JOptionPane.showMessageDialog(null, rec
+				+"\nArea of Rectangle is "+rec.getArea());//call toString method form Rectangle
+				
+				
 	}
 
 }
